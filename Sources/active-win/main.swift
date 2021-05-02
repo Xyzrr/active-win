@@ -20,13 +20,13 @@ let disableScreenRecordingPermission = CommandLine.arguments.contains("--no-scre
 
 // Show accessibility permission prompt if needed. Required to get the complete window title.
 if !disableScreenRecordingPermission && !AXIsProcessTrustedWithOptions(["AXTrustedCheckOptionPrompt": true] as CFDictionary) {
-	print("active-win requires the accessibility permission in “System Preferences › Security & Privacy › Privacy › Accessibility”.")
+	print("xyzrr/active-win requires the accessibility permission in “System Preferences › Security & Privacy › Privacy › Accessibility”.")
 	exit(1)
 }
 
 // Show screen recording permission prompt if needed. Required to get the complete window title.
 if !disableScreenRecordingPermission && !hasScreenRecordingPermission() {
-	print("active-win requires the screen recording permission in “System Preferences › Security & Privacy › Privacy › Screen Recording”.")
+	print("xyzrr/active-win requires the screen recording permission in “System Preferences › Security & Privacy › Privacy › Screen Recording”.")
 	exit(1)
 }
 
